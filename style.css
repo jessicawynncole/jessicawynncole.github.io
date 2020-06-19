@@ -34,10 +34,23 @@ h2{
 
 /*Grid Setup*/
 .grid{
+  display: inline-grid;
   grid-template-columns: repeat(10, 1fr);
   margin-left: 20px;
   margin-right: 20px;
   grid-gap: 20px;
   width: 100%;
+  min-width: 900px;
   max-width: 1400px;
 }
+
+/*Title*/
+.title{
+  grid-column: 3 / span 3;
+}
+
+.icon{
+  grid-column: 7 / span 2;
+}
+
+/*Popups*/
