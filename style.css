@@ -5,8 +5,39 @@
 	box-sizing: border-box;
 }
 
+/*Colours*/
+:root{
+  --darkpink: #FD11AD;
+  --mediumpink: #F9B5D8;
+}
+
 /*General Settings*/
-body {
+body{
 	background-image: url("images/BG.jpg");
 	background-repeat: repeat;
+}
+
+h1{
+  font-family: "Bebas Neue";
+  font-size: 130px;
+  letter-spacing: .9rem;
+  color: var(--darkpink);
+  text-shadow: 5px 5px var(--mediumpink);
+}
+
+h2{
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  letter-spacing: .3rem;
+  color: var(--darkpink);
+}
+
+/*Grid Setup*/
+.grid{
+  grid-template-columns: repeat(10, 1fr);
+  margin-left: 20px;
+  margin-right: 20px;
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1400px;
 }
