@@ -7,12 +7,25 @@
 
 /*Colours*/
 :root{
-  --darkpink: #FD11AD;
-  --mediumpink: #F9B5D8;
-  --lightpink: #FEE0F8;
 	--darkgrey: #3E4A4B;
 	--mediumgrey: #B8CBCE;
 	--lightgrey: #D2E7EA;
+
+	--darkpink: #FD11AD;
+  --mediumpink: #F9B5D8;
+  --lightpink: #FEE0F8;
+
+	--darkpuple: #620CA6;
+	--mediumpurple: #B05AF3;
+	--lightpurple: #CDA9FF;
+
+	--darkblue: #4ABDAC;
+	--mediumblue: #66D3AA;
+	--lightblue: #E8FFF6;
+
+	--darkyellow: #AEAB5C;
+	--mediumyellow: #FFF205;
+	--lightyellow: #FFFCBB;
 }
 
 /*Font*/
@@ -71,8 +84,8 @@ h2{
 }
 
 h3{
-  font-size: 1.0rem;
-  font-weight: 200;
+  font-size: 1.5rem;
+  font-weight: 100;
   color: var(--lightpink);
 }
 
@@ -89,8 +102,8 @@ h3{
 a{
 	color: #fff;
 	background-color: var(--mediumgrey);
-	font-size: 1.6rem;
-	line-height: 3;
+	font-size: 2rem;
+	line-height: 2;
 	text-align: center;
 	text-decoration: none;
 	box-shadow: 4px 4px 1px rgba(0, 0, 0, .5);
@@ -141,6 +154,7 @@ a:hover, a:focus, a:active{
 	margin-top: 210px;
   margin-bottom: 50px;
 	display: relative;
+	max-height: 500px;
 }
 
 .title{
@@ -151,24 +165,31 @@ a:hover, a:focus, a:active{
   grid-column: 7 / span 2;
 }
 
-/*Popups*/
-#pinkpopup{
+/*Popup General*/
+.popup{
   width: 100%;
   height: 100%;
   grid-column: 3 / span 6;
   display: inline-grid;
-  background: var(--lightpink);
-  box-shadow: 10px 10px var(--mediumpink);
   align-items: center;
 }
 
-#popupheader-pink{
-  background-color: var(--darkpink);
+.popupheader{
   width: 100%;
   height: 2.6rem;
   grid-column: 1 / span 6;
   line-height: 2.6rem;
   padding-left: .6rem;
+}
+
+/*Pink Popup*/
+#popup-pink{
+  background: var(--lightpink);
+  box-shadow: 10px 10px var(--mediumpink);
+}
+
+#header-pink{
+  background-color: var(--darkpink);
 }
 
 #image-pink{
@@ -184,4 +205,14 @@ a:hover, a:focus, a:active{
   padding-left: 1.6rem;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
+}
+
+/*Purple Popup*/
+#popup-purple{
+  background: var(--lightpink);
+  box-shadow: 10px 10px var(--mediumpink);
+}
+
+#header-purple{
+  background-color: var(--darkpink);
 }
