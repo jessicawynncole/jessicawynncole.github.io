@@ -10,6 +10,7 @@
   --darkpink: #FD11AD;
   --mediumpink: #F9B5D8;
   --lightpink: #FEE0F8;
+	--darkgrey: #B8CBCE;
 }
 
 /*Font*/
@@ -39,12 +40,12 @@ body{
   letter-spacing: 2;
 }
 
-footer{
-  height: 5.2rem;
+nav{
+  height: 120px;
   width: 100%;
-  background-color: var(--lightpink);
+  background-color: var(--darkgrey);
   position: fixed;
-  bottom: 0px;
+  top: 0px;
 }
 
 h1{
@@ -94,8 +95,9 @@ h3{
 
 /*Title*/
 #titleblock{
-  margin-top: 1.6rem;
-  margin-bottom: 1.6rem;
+	margin-top: 210px;
+  margin-bottom: 50px;
+	display: relative;
 }
 
 .title{
