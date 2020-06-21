@@ -288,6 +288,7 @@ a:hover, a:focus, a:active{
 #popup-yellow{
   background: var(--lightyellow);
   box-shadow: 10px 10px var(--mediumyellow);
+	margin-bottom: 2.6rem;
 }
 
 #header-yellow{
