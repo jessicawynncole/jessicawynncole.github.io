@@ -145,7 +145,7 @@ a:hover, a:focus, a:active{
 
 .gridrow{
 	display: inline-grid;
-	grid-template-rows: repeat(1, 1fr);
+	grid-template-rows: repeat(5, 25%);
 	width: 100%;
 	height: auto;
 }
@@ -184,6 +184,12 @@ a:hover, a:focus, a:active{
 #anchor4{
 	margin-bottom: 25rem;
 	grid-row: 4 / span 1;
+}
+
+#anchor5{
+	margin-bottom: 25rem;
+	height: 2.6rem;
+	grid-row: 5 / span 1;
 }
 
 /*Title*/
