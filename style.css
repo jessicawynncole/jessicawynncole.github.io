@@ -98,6 +98,12 @@ h3{
   font-weight: 100;
 }
 
+strong{
+	text-decoration: underline;
+	color: #fff;
+	font-weight: 100;
+}
+
 /*Links Formatting*/
 a{
 	color: #fff;
@@ -176,6 +182,7 @@ a:hover, a:focus, a:active{
   display: inline-grid;
   align-items: center;
 	position: relative;
+	padding-bottom: 1.6rem;
 }
 
 .popupheader{
@@ -194,21 +201,19 @@ a:hover, a:focus, a:active{
 
 #header-pink{
   background-color: var(--darkpink);
+	margin-bottom: 1.6rem;
 }
 
 #image-pink{
   grid-column: 1 / span 3;
   padding-left: 1.6rem;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+	padding-right: 1.6rem;
 }
 
 #popuptext-pink{
   grid-column: 4 / span 3;
   padding-right: 1.6rem;
   padding-left: 1.6rem;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
 }
 
 /*Purple Popup*/
@@ -219,16 +224,45 @@ a:hover, a:focus, a:active{
 
 #header-purple{
   background-color: var(--darkpurple);
+	margin-bottom: 1.6rem;
+}
+
+#image-purple{
+  grid-column: 4 / span 3;
+	padding-right: 1.6rem;
+  padding-left: 1.6rem;
+}
+
+#popuptext-purple{
+  grid-column: 1 / span 3;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
 }
 
 /*Blue Popup*/
 #popup-blue{
   background: var(--lightblue);
   box-shadow: 10px 10px var(--mediumblue);
+  align-items: none;
 }
 
 #header-blue{
   background-color: var(--darkblue);
+	margin-bottom: 1.6rem;
+}
+
+#popuptext-blue{
+	text-align: center;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	grid-column: 2 / span 4;
+}
+
+#image-blue{
+	text-align: center;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	grid-column: 2 / span 4;
 }
 
 /*Yellow Popup*/
@@ -239,4 +273,5 @@ a:hover, a:focus, a:active{
 
 #header-yellow{
   background-color: var(--darkyellow);
+	margin-bottom: 1.6rem;
 }
