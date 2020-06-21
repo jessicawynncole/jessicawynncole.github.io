@@ -104,6 +104,11 @@ strong{
 	font-weight: 100;
 }
 
+#image{
+	height: auto;
+	width: 100%;
+}
+
 /*Links Formatting*/
 a{
 	color: #fff;
@@ -228,13 +233,14 @@ a:hover, a:focus, a:active{
 }
 
 #image-purple{
-  grid-column: 4 / span 3;
-	padding-right: 1.6rem;
+	grid-column: 1 / span 3;
   padding-left: 1.6rem;
+	padding-right: 1.6rem;
+	height: 420px;
 }
 
 #popuptext-purple{
-  grid-column: 1 / span 3;
+	grid-column: 4 / span 3;
   padding-right: 1.6rem;
   padding-left: 1.6rem;
 }
@@ -262,7 +268,7 @@ a:hover, a:focus, a:active{
 	text-align: center;
 	padding-right: 1.6rem;
 	padding-left: 1.6rem;
-	grid-column: 2 / span 4;
+	grid-column: 3 / span 2;
 }
 
 /*Yellow Popup*/
