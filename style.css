@@ -15,7 +15,7 @@
   --mediumpink: #F9B5D8;
   --lightpink: #FEE0F8;
 
-	--darkpuple: #620CA6;
+	--darkpurple: #620CA6;
 	--mediumpurple: #B05AF3;
 	--lightpurple: #CDA9FF;
 
@@ -96,7 +96,6 @@ h2{
 h3{
   font-size: 1.5rem;
   font-weight: 100;
-  color: var(--lightpink);
 }
 
 /*Links Formatting*/
@@ -166,6 +165,10 @@ a:hover, a:focus, a:active{
 }
 
 /*Popup General*/
+#popupwrapper{
+	margin-bottom: 430px;
+}
+
 .popup{
   width: 100%;
   height: 100%;
@@ -210,10 +213,30 @@ a:hover, a:focus, a:active{
 
 /*Purple Popup*/
 #popup-purple{
-  background: var(--lightpink);
-  box-shadow: 10px 10px var(--mediumpink);
+  background: var(--lightpurple);
+  box-shadow: 10px 10px var(--mediumpurple);
 }
 
 #header-purple{
-  background-color: var(--darkpink);
+  background-color: var(--darkpurple);
+}
+
+/*Blue Popup*/
+#popup-blue{
+  background: var(--lightblue);
+  box-shadow: 10px 10px var(--mediumblue);
+}
+
+#header-blue{
+  background-color: var(--darkblue);
+}
+
+/*Yellow Popup*/
+#popup-yellow{
+  background: var(--lightyellow);
+  box-shadow: 10px 10px var(--mediumyellow);
+}
+
+#header-yellow{
+  background-color: var(--darkyellow);
 }
