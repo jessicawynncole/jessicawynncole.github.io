@@ -59,6 +59,9 @@ nav{
   height: 120px;
 	width: 100%;
   background-color: var(--mediumgrey);
+	border-top: 4px solid #fff;
+	border-left: 4px solid #fff;
+	box-shadow: 4px 4px 1px var(--darkgrey);
   position: fixed;
 	top: 0px;
 	display: flex;
@@ -139,7 +142,7 @@ a:hover, a:focus, a:active{
   margin-right: 20px;
   grid-gap: 20px;
   width: 100%;
-  min-width: 900px;
+  min-width: 800px;
   max-width: 1400px;
 }
 
@@ -192,6 +195,7 @@ a:hover, a:focus, a:active{
 	grid-row: 5 / span 1;
 }
 
+
 /*Title*/
 #titleblock{
 	margin-top: 210px;
@@ -211,6 +215,12 @@ a:hover, a:focus, a:active{
 /*Popup General*/
 #popupwrapper{
 	margin-bottom: 8.0rem;
+}
+
+@media (max-width: 800px) {
+	#popupwrapper {
+		padding-bottom: 4.0rem;
+	}
 }
 
 .popup{
