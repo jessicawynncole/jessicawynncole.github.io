@@ -113,6 +113,10 @@ strong{
 	width: 100%;
 }
 
+p{
+	padding-bottom: 1.6rem;
+}
+
 /*Links Formatting*/
 a{
 	color: #fff;
@@ -279,7 +283,6 @@ a:hover, a:focus, a:active{
 	grid-column: 1 / span 3;
   padding-left: 1.6rem;
 	padding-right: 1.6rem;
-	height: 420px;
 }
 
 #popuptext-purple{
@@ -302,8 +305,8 @@ a:hover, a:focus, a:active{
 
 #popuptext-blue{
 	text-align: center;
-	padding-right: 1.6rem;
-	padding-left: 1.6rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
 	grid-column: 2 / span 4;
 }
 
