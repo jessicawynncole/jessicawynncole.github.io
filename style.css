@@ -163,7 +163,7 @@ a:hover, a:focus, a:active{
   margin-right: 20px;
   grid-gap: 20px;
   width: 100%;
-  min-width: 800px;
+  min-width: 900px;
   max-width: 1400px;
 }
 
@@ -271,18 +271,20 @@ a:hover, a:focus, a:active{
 #header-pink{
   background-color: var(--darkpink);
 	margin-bottom: 1.6rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 }
 
 #image-pink{
   grid-column: 1 / span 3;
-  padding-left: 1.6rem;
-	padding-right: 1.6rem;
+  padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 #popuptext-pink{
   grid-column: 4 / span 3;
-  padding-right: 1.6rem;
-  padding-left: 1.6rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /*Purple Popup*/
@@ -294,18 +296,20 @@ a:hover, a:focus, a:active{
 #header-purple{
   background-color: var(--darkpurple);
 	margin-bottom: 1.6rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 }
 
 #image-purple{
 	grid-column: 1 / span 3;
-  padding-left: 1.6rem;
-	padding-right: 1.6rem;
+  padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 #popuptext-purple{
 	grid-column: 4 / span 3;
-  padding-right: 1.6rem;
-  padding-left: 1.6rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /*Blue Popup*/
@@ -318,12 +322,14 @@ a:hover, a:focus, a:active{
 #header-blue{
   background-color: var(--darkblue);
 	margin-bottom: 1.6rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 }
 
 #popuptext-blue{
 	text-align: center;
-	padding-right: 3rem;
-	padding-left: 3rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
 	grid-column: 2 / span 4;
 }
 
@@ -343,12 +349,14 @@ a:hover, a:focus, a:active{
 #header-yellow{
   background-color: var(--darkyellow);
 	margin-bottom: 1.6rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
 }
 
 #popuptext-yellow{
-	padding-right: 3rem;
-	padding-left: 3rem;
-	overflow: auto;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	grid-column: 2 / span 4;
 }
 
 /*Form*/
@@ -361,16 +369,21 @@ a:hover, a:focus, a:active{
 	width: 32%;
 }
 
+#questioncontent{
+	display: flex;
+	justify-content: space-between;
+}
+
 #extralarge{
-	width: 64%;
+	width: 66%;
 }
 
 #large{
-	width: 48%;
+	width: 50%;
 }
 
 #medium{
-	width: 32%;
+	width: 33%;
 }
 
 #small{
