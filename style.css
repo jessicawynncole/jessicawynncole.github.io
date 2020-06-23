@@ -438,12 +438,13 @@ select{
 
 input[type=submit]{
 	background: var(--darkyellow);
-	height: 3.0rem;
+	height: 5.0rem;
+	width: auto;
 	font-family: "Pixelated MS Sans Serif";
 	font-size: 1rem;
 	line-height: 1.6rem;
-	padding-left: .8rem;
-	padding-right: .8rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	border: none;
 	box-shadow: 2px 2px 1px rgba(0, 0, 0, .5);
 	border-top: 2px solid rgba(255,255,255, 1);
