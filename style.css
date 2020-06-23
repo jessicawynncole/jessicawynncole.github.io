@@ -23,9 +23,10 @@
 	--mediumblue: #66D3AA;
 	--lightblue: #E8FFF6;
 
-	--darkyellow: #AEAB5C;
-	--mediumyellow: #FFF205;
-	--lightyellow: #FFFCBB;
+	--darkyellow: #C6A30A;
+	--mediumyellow: #EFC501;
+	--lightyellow: #FFEDA8;
+	--accentyellow: #786200;
 }
 
 /*Font*/
@@ -320,10 +321,10 @@ a:hover, a:focus, a:active{
 /*Yellow Popup*/
 #popup-yellow{
   background: var(--lightyellow);
-  box-shadow: 10px 10px var(--mediumyellow);
+  box-shadow: 10px 10px var(--darkyellow);
 }
 
 #header-yellow{
-  background-color: var(--darkyellow);
+  background-color: var(--mediumyellow);
 	margin-bottom: 1.6rem;
 }
