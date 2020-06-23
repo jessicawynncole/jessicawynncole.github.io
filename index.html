@@ -112,63 +112,78 @@
         <form action="submission.html" method="POST"><!--Form-->
 
         <section id="popuptext-yellow">
-          <p>Can’t wait to enter the magical world of Tamagotchi? Order today!</p>
+          <p>Can’t wait to enter the magical world of Tamagotchi? Order today! Can’t wait to enter the magical world of Tamagotchi? Order today</p>
 
           <!--Question 1-->
-          <section class="question">
+          <section class="questionwrapper">
             <h4><u>C</u>ontact Information</h4>
-            <h5>Name</h5>
-            <input type="text" name="Q1-1" id="Q1-1" class="extralarge" required>
-
-            <h5>E-Mail Address</h5>
-            <input type="text" name="Q1-2" id="Q1-2" class="medium" required>
+            <div class="question" id="extralarge">
+              <h5>Name</h5>
+              <input type="text" name="Q1-1" id="Q1-1" class="extralarge" required>
+            </div>
+            <div class="question" id="medium">
+              <h5>E-Mail Address</h5>
+              <input type="text" name="Q1-2" id="Q1-2" class="medium" required>
+            </div>
           </section>
 
           <!--Question 2-->
-          <section class="question">
+          <section class="questionwrapper">
             <h4><u>P</u>roduct Choice</h4>
             <h5>Select a colour</h5>
-            <select name="Q2-1" id="Q2-1">
-              <option value="a">Garden lavender</option>
-              <option value="a">Wonder turquoise</option>
-              <option value="a">Fairy pink</option>
-              <option value="a">Sparkle blue</option>
-              <option value="a">Midnight purple</option>
-              <option value="a">Magic green</option>
-              <option value="a">Shimmer white</option>
-            </select>
+            <div class="question" id="extralarge">
+              <select name="Q2-1" id="Q2-1">
+                <option value="a">Garden lavender</option>
+                <option value="a">Wonder turquoise</option>
+                <option value="a">Fairy pink</option>
+                <option value="a">Sparkle blue</option>
+                <option value="a">Midnight purple</option>
+                <option value="a">Magic green</option>
+                <option value="a">Shimmer white</option>
+              </select>
+            </div>
           </section>
 
           <!--Question 3-->
-          <section class="question">
+          <section class="questionwrapper">
             <h4><u>B</u>illing</h4>
-            <h5>Credit Card #</h5>
-            <input type="text" name="Q3-1" id="Q3-1" class="large" required>
-
-            <h5>Expiration Date (MM/YY)</h5>
-            <input type="text" name="Q3-2" id="Q3-2" class="medium" required>
-
-            <h5>CVV</h5>
-            <input type="text" name="Q3-3" id="Q3-3" class="small" required>
+            <div class="question" id="large">
+              <label for="Q3-1"><h5>Credit Card #</h5><label>
+                <input type="text" name="Q3-1" id="Q3-1" class="large" required>
+            </div>
+            <div class="question" id="medium">
+              <label for="Q3-2"><h5>Expiration Date (MM/YY)</h5></label>
+              <input type="text" name="Q3-2" id="Q3-2" class="medium" required>
+            </div>
+            <div class="question" id="small">
+              <label for="Q3-3"><h5>CVV</h5><label>
+              <input type="text" name="Q3-3" id="Q3-3" class="small" required>
+            </div>
           </section>
 
           <!--Question 4-->
-          <section class="question">
+          <section class="questionwrapper">
             <h4><u>S</u>hipping Information</h4>
-            <h5>Shipping Address</h5>
-            <input type="text" name="Q4-1" id="Q4-1" class="extralarge" required>
-
-            <h5>Postal Code</h5>
-            <input type="text" name="Q4-2" id="Q4-2" class="medium" required>
-
-            <h5>City</h5>
-            <input type="text" name="Q4-3" id="Q4-3" class="medium" required>
-
-            <h5>State/Province</h5>
-            <input type="text" name="Q4-4" id="Q4-4" class="medium" required>
-
-            <h5>Country</h5>
-            <input type="text" name="Q4-5" id="Q4-5" class="medium" required>
+            <div class="question" id="extralarge">
+              <h5>Shipping Address</h5>
+              <input type="text" name="Q4-1" id="Q4-1" class="extralarge" required>
+            </div>
+            <div class="question" id="medium">
+              <h5>Postal Code</h5>
+              <input type="text" name="Q4-2" id="Q4-2" class="medium" required>
+            </div>
+            <div class="question" id="medium">
+              <h5>City</h5>
+              <input type="text" name="Q4-3" id="Q4-3" class="medium" required>
+            </div>
+            <div iclass="question" id="medium">
+              <h5>State/Province</h5>
+              <input type="text" name="Q4-4" id="Q4-4" class="medium" required>
+            </div>
+            <div class="question" id="medium">
+              <h5>Country</h5>
+              <input type="text" name="Q4-5" id="Q4-5" class="medium" required>
+            </div>
           </section>
 
           <input type="submit" value="Order Now!" alt="Form submission button">

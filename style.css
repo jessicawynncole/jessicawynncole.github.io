@@ -111,7 +111,8 @@ h4{
 }
 
 h5{
-	font-size: 1.0rem;
+	font-size: .8rem;
+	line-height: 1.6rem;
 	letter-spacing: 2;
 	font-weight: 100;
 	color: var(--accentyellow);
@@ -337,7 +338,6 @@ a:hover, a:focus, a:active{
 #popup-yellow{
   background: var(--lightyellow);
   box-shadow: 10px 10px var(--mediumyellow);
-	display: inline-block;
 }
 
 #header-yellow{
@@ -348,9 +348,51 @@ a:hover, a:focus, a:active{
 #popuptext-yellow{
 	padding-right: 3rem;
 	padding-left: 3rem;
+	overflow: auto;
+}
+
+/*Form*/
+.questionwrapper{
+	padding-bottom: 1.6rem;
 }
 
 .question{
-	padding-bottom: 1.6rem;
-	display: block;
+	display: inline-block;
+	width: 32%;
+}
+
+#extralarge{
+	width: 64%;
+}
+
+#large{
+	width: 48%;
+}
+
+#medium{
+	width: 32%;
+}
+
+#small{
+	width: 16%;
+}
+
+input[type=text]{
+	height: 3.0rem;
+}
+
+input[type=text].extralarge{
+	width: 100%;
+}
+
+input[type=text].large{
+	width: 100%;
+}
+
+input[type=text].medium{
+	width: 100%;
+}
+
+input[type=text].small{
+	width: 100%;
 }
