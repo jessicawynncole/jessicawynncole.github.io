@@ -51,7 +51,7 @@ body{
 	background-image: url("images/BG.jpg");
 	background-repeat: repeat;
   font-family: "Pixelated MS Sans Serif";
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: 2;
 }
@@ -101,6 +101,21 @@ h2{
 h3{
   font-size: 1.5rem;
   font-weight: 100;
+}
+
+h4{
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: 100;
+	padding-bottom: .3rem;
+}
+
+h5{
+	font-size: 1.0rem;
+	letter-spacing: 2;
+	font-weight: 100;
+	color: var(--accentyellow);
+	text-transform: uppercase;
 }
 
 strong{
@@ -321,10 +336,21 @@ a:hover, a:focus, a:active{
 /*Yellow Popup*/
 #popup-yellow{
   background: var(--lightyellow);
-  box-shadow: 10px 10px var(--darkyellow);
+  box-shadow: 10px 10px var(--mediumyellow);
+	display: inline-block;
 }
 
 #header-yellow{
-  background-color: var(--mediumyellow);
+  background-color: var(--darkyellow);
 	margin-bottom: 1.6rem;
+}
+
+#popuptext-yellow{
+	padding-right: 3rem;
+	padding-left: 3rem;
+}
+
+.question{
+	padding-bottom: 1.6rem;
+	display: block;
 }

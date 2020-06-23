@@ -111,80 +111,69 @@
 
         <form action="submission.html" method="POST"><!--Form-->
 
-        <section id="text-yellow">
+        <section id="popuptext-yellow">
+          <p>Can’t wait to enter the magical world of Tamagotchi? Order today!</p>
 
-          <section class="questiongroup"><!--Question 1-->
-            <div class="question">
-              Name:
-            </div>
-            <div class="answer">
-              <div class="answerlarge">
-                <input type="text" name="Q1Name" id="Q1Name" class="large" placeholder="Jane Brown" required>
-              </div>
-            </div>
+          <!--Question 1-->
+          <section class="question">
+            <h4><u>C</u>ontact Information</h4>
+            <h5>Name</h5>
+            <input type="text" name="Q1-1" id="Q1-1" class="extralarge" required>
+
+            <h5>E-Mail Address</h5>
+            <input type="text" name="Q1-2" id="Q1-2" class="medium" required>
           </section>
-        </section>
 
-        <section class="questiongroup"><!--Question 2-->
-          <div class="question">
-            Please select a colour:
-          </div>
-          <div class="radiobar">
-            <label class="radiobutton a">
-              <input type="radio" name="delivery" id="Q3text" value="text" required>
-              <span class="radiolabel">Lovely lavender</span>
-            </label>
-            <label class="radiobutton b">
-              <input type="radio" name="delivery" id="Q3email" value="email">
-              <span class="radiolabel">Fairy pink</span>
-            </label>
-            <label class="radiobutton c">
-              <input type="radio" name="delivery" id="Q3both" value="both">
-              <span class="radiolabel">Midnight purple</span>
-            </label>
-            <label class="radiobutton c">
-              <input type="radio" name="delivery" id="Q3both" value="both">
-              <span class="radiolabel">Magic green</span>
-            </label>
-            <label class="radiobutton c">
-              <input type="radio" name="delivery" id="Q3both" value="both">
-              <span class="radiolabel">Glitter blue</span>
-            </label>
-            <label class="radiobutton c">
-              <input type="radio" name="delivery" id="Q3both" value="both">
-              <span class="radiolabel">Sparkle white</span>
-            </label>
-          </div>
-        </section>
+          <!--Question 2-->
+          <section class="question">
+            <h4><u>P</u>roduct Choice</h4>
+            <h5>Select a colour</h5>
+            <select name="Q2-1" id="Q2-1">
+              <option value="a">Garden lavender</option>
+              <option value="a">Wonder turquoise</option>
+              <option value="a">Fairy pink</option>
+              <option value="a">Sparkle blue</option>
+              <option value="a">Midnight purple</option>
+              <option value="a">Magic green</option>
+              <option value="a">Shimmer white</option>
+            </select>
+          </section>
 
-        <section class="questiongroup"><!--Question 3-->
-          <div class="question">
-            Shipping Information:
-          </div>
-          <div class="answer">
-            <div class="answermedium">
-              <label for="Q4street"><h4>Street Address</h4></label>
-              <input type="text" name="Q4street" id="Q4street" class="medium" placeholder="123 Apple Street East" required>
-            </div>
-            <div class="answersmall">
-              <label for="Q4apt"><h4>Apt #</h4></label>
-              <input type="text" name="Q4apt" id="Q4apt" class="small" placeholder="4">
-            </div>
-          </div>
-          <div class="answer">
-            <div class="answermedium">
-              <label for="Q4city"><h4>City</h4></label>
-              <input type="text" name="Q4city" id="Q4city" class="medium" placeholder="Vancouver" required>
-            </div>
-            <div class="answersmall">
-              <label for="Q4postal"><h4>Postal Code</h4></label>
-              <input type="text" name="Q4postal" id="Q4postal" class="small" placeholder="A1A 1A1" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
-            </div>
-        </section>
+          <!--Question 3-->
+          <section class="question">
+            <h4><u>B</u>illing</h4>
+            <h5>Credit Card #</h5>
+            <input type="text" name="Q3-1" id="Q3-1" class="large" required>
 
-      </section>
+            <h5>Expiration Date (MM/YY)</h5>
+            <input type="text" name="Q3-2" id="Q3-2" class="medium" required>
 
+            <h5>CVV</h5>
+            <input type="text" name="Q3-3" id="Q3-3" class="small" required>
+          </section>
 
+          <!--Question 4-->
+          <section class="question">
+            <h4><u>S</u>hipping Information</h4>
+            <h5>Shipping Address</h5>
+            <input type="text" name="Q4-1" id="Q4-1" class="extralarge" required>
+
+            <h5>Postal Code</h5>
+            <input type="text" name="Q4-2" id="Q4-2" class="medium" required>
+
+            <h5>City</h5>
+            <input type="text" name="Q4-3" id="Q4-3" class="medium" required>
+
+            <h5>State/Province</h5>
+            <input type="text" name="Q4-4" id="Q4-4" class="medium" required>
+
+            <h5>Country</h5>
+            <input type="text" name="Q4-5" id="Q4-5" class="medium" required>
+          </section>
+
+          <input type="submit" value="Order Now!" alt="Form submission button">
+
+        </section><!--Popup-text section-->
 
       </div><!--Popup div-->
     <div id="anchor5"></div>
