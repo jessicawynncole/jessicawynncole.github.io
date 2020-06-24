@@ -338,8 +338,9 @@ a:active{
 
 #popuptext-blue{
 	text-align: center;
-	padding-right: 2rem;
-	padding-left: 2rem;
+	padding-right: 5rem;
+	padding-left: 5rem;
+	padding-bottom: 1.6rem;
 	grid-column: 2 / span 4;
 }
 
