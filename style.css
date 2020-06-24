@@ -458,7 +458,6 @@ select{
 	border: none;
 	border-top: 2px solid var(--darkyellow);
 	border-left: 2px solid var(--darkyellow);
-	-webkit-appearance: none;
 }
 
 input[type=submit]{
@@ -476,7 +475,6 @@ input[type=submit]{
 	border-top: 2px solid rgba(255,255,255, 1);
 	border-left: 2px solid rgba(255,255,255, 1);
 	margin-top: .8rem;
-	-webkit-appearance: none;
 }
 
 input[type=submit]:focus, input[type=submit]:active{
@@ -488,4 +486,10 @@ input[type=submit]:active{
 	box-shadow: 2px 2px 1px rgba(255,255,255, 1);
 	border-top: 2px solid rgba(0, 0, 0, .5);
 	border-left: 2px solid rgba(0, 0, 0, .5);
+}
+
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
