@@ -115,7 +115,7 @@
         </section>
 
         <section id="popuptext-yellow">
-          <p>Can’t wait to enter the magical world of Tamagotchi?</p>
+          <p>Can’t wait to enter the magical world of Tamagotchi? Place your order now to start the best summer of your life!</p>
           <form action="submission.html" method="POST"><!--Form-->
 
           <!--Question 1-->
@@ -128,7 +128,7 @@
               </div>
               <div class="question" id="medium">
                 <label for="Q-2"><h5>E-mail Address</h5></label>
-                <input type="text" name="Q1-2" id="Q1-2" class="medium" required>
+                <input type="email" name="Q1-2" id="Q1-2" class="medium" required>
               </div>
             </div>
           </section>
@@ -158,15 +158,15 @@
             <div id="questioncontent">
               <div class="question" id="large">
                 <label for="Q3-1"><h5>Credit Card #</h5><label>
-                <input type="text" name="Q3-1" id="Q3-1" class="large" required>
+                <input type="text" name="Q3-1" id="Q3-1" class="large" patter="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" minlength="19" maxlength="19" placeholder="1234 1234 1234 1234" required>
               </div>
               <div class="question" id="medium">
                 <label for="Q3-2"><h5>Exp. Date (MM/YY)</h5></label>
-                <input type="text" name="Q3-2" id="Q3-2" class="medium" required>
+                <input type="text" name="Q3-2" id="Q3-2" class="medium" pattern="[0-9]{2}/[0-9]{2}" required>
               </div>
               <div class="question" id="small">
                 <label for="Q3-3"><h5>CVV</h5><label>
-                <input type="text" name="Q3-3" id="Q3-3" class="small" required>
+                <input type="text" name="Q3-3" id="Q3-3" class="small" pattern="[0-9]{3}" required>
               </div>
             </div>
           </section>
@@ -180,8 +180,8 @@
                 <input type="text" name="Q4-1" id="Q4-1" class="extralarge" required>
               </div>
               <div class="question" id="medium">
-                <label for="Q4-2"><h5>Postal Code</h5></label>
-                <input type="text" name="Q4-2" id="Q4-2" class="medium" required>
+                <label for="Q4-2"><h5>Zip/Postal Code</h5></label>
+                <input type="text" name="Q4-2" id="Q4-2" class="medium" pattern=".{5}|[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
               </div>
             </div>
           </section>

@@ -156,7 +156,7 @@ a:hover, a:focus, a:active{
 }
 
 a:active{
-	outline: .15rem dotted #000000;
+	outline: .01rem dotted #000000;
   outline-offset: -.2rem;
 }
 
@@ -396,7 +396,7 @@ a:active{
 	width: 16%;
 }
 
-input[type=text]{
+input[type=text],input[type=email]{
 	height: 3.0rem;
 	font-family: "Pixelated MS Sans Serif";
 	font-size: 1rem;
@@ -405,24 +405,32 @@ input[type=text]{
 	padding-left: .8rem;
 	padding-right: .8rem;
 	border: none;
-	box-shadow: 2px 2px 1px rgba(255,255,255, 1);
 	border-top: 2px solid rgba(0, 0, 0, .5);
 	border-left: 2px solid rgba(0, 0, 0, .5);
 }
 
-input[type=text].extralarge{
+input[type=text]::placeholder,input[type=email]::placeholder{
+	color: rgba(0,0,0,.25);
+}
+
+input[type=text]:focus,input[type=email]:focus{
+	outline: .1rem dotted #000000;
+	outline-offset: -.4rem;
+}
+
+input[type=text].extralarge,input[type=email].extralarge{
 	width: 100%;
 }
 
-input[type=text].large{
+input[type=text].large,input[type=email].large{
 	width: 100%;
 }
 
-input[type=text].medium{
+input[type=text].medium,input[type=email].medium{
 	width: 100%;
 }
 
-input[type=text].small{
+input[type=text].small,input[type=email].small{
 	width: 100%;
 }
 
@@ -454,7 +462,7 @@ input[type=submit]{
 }
 
 input[type=submit]:focus, input[type=submit]:active{
-	outline: .15rem dotted #000000;
+	outline: .01rem dotted #000000;
   outline-offset: -.4rem;
 }
 
