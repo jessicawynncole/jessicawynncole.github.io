@@ -413,7 +413,7 @@ input[type=text]::placeholder,input[type=email]::placeholder{
 	color: rgba(0,0,0,.25);
 }
 
-input[type=text]:focus,input[type=email]:focus{
+input[type=text]:focus,input[type=email]:focus,select:focus{
 	outline: .1rem dotted #000000;
 	outline-offset: -.4rem;
 }
@@ -442,6 +442,9 @@ select{
 	letter-spacing: 2;
 	padding-left: .8rem;
 	padding-right: .8rem;
+	border: none;
+	border-top: 2px solid rgba(0, 0, 0, .5);
+	border-left: 2px solid rgba(0, 0, 0, .5);
 }
 
 input[type=submit]{
