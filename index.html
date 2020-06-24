@@ -116,7 +116,7 @@
 
         <section id="popuptext-yellow">
           <p>Can’t wait to enter the magical world of Tamagotchi? Place your order now to start the best summer of your life!</p>
-          <form action="submission.html" method="POST"><!--Form-->
+          <form action="submission.html" method="POST" name="myForm"><!--Form-->
 
           <!--Question 1-->
           <section class="questionwrapper">
@@ -138,20 +138,33 @@
             <h4><u>P</u>roduct Choice</h4>
             <div id="questioncontent">
               <div class="question" id="extralarge">
-                <select name="Q2-1" id="Q2-1" required>
+                <select name="switch" id="Q2-1" onchange="switchImage();" required>
                   <option disabled selected value> Select a colour </option>
-                  <option value="Pink">Fairy pink</option>
-                  <option value="Blue">Sparkle blue</option>
-                  <option value="Purple">Midnight purple</option>
-                  <option value="Green">Magic green</option>
-                  <option value="White">Shimmer white</option>
+                  <option value="1">Fairy pink</option>
+                  <option value="2">Sparkle blue</option>
+                  <option value="3">Midnight purple</option>
+                  <option value="4">Magic green</option>
+                  <option value="5">Shimmer white</option>
                 </select>
               </div>
             </div>
             <section id="image-yellow">
-              <img src="images/Product/White.png" id="resizeimage">
+              <img src="images/Product/0.png" id="resizeimage" name="myImage">
             </section>
           </section>
+
+          <script>
+          var imageList = Array();
+          for (var i = 1; i <= 5; i++) {
+                imageList[i] = new Image(70, 70);
+                imageList[i].src = "images/Product/" + i + ".png";
+              }
+          function switchImage() {
+                var selectedImage = document.myForm.switch.options[document.myForm.switch.selectedIndex].value;
+                document.myImage.src = imageList[selectedImage].src;
+              }
+          </script>
+
 
           <!--Question 3-->
           <section class="questionwrapper">
@@ -204,6 +217,7 @@
           </section>
 
           <center><input type="submit" value="Order Now!" alt="Form submission button"></center>
+          </form>
 
         </section><!--Popup text section-->
 

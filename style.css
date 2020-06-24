@@ -130,6 +130,11 @@ strong{
 	width: 100%;
 }
 
+#resizeimage{
+	height: 100%;
+	width: auto;
+}
+
 p{
 	padding-bottom: 1.6rem;
 }
@@ -371,11 +376,6 @@ a:active{
 	height: 10rem;
 }
 
-#resizeimage{
-	height: 100%;
-	width: auto;
-}
-
 /*Form*/
 .questionwrapper{
 	padding-bottom: 1.6rem;
@@ -417,8 +417,8 @@ input[type=text],input[type=email]{
 	padding-left: .8rem;
 	padding-right: .8rem;
 	border: none;
-	border-top: 2px solid rgba(0, 0, 0, .5);
-	border-left: 2px solid rgba(0, 0, 0, .5);
+	border-top: 2px solid var(--darkyellow);
+	border-left: 2px solid var(--darkyellow);
 }
 
 input[type=text]::placeholder,input[type=email]::placeholder{
@@ -455,8 +455,8 @@ select{
 	padding-left: .8rem;
 	padding-right: .8rem;
 	border: none;
-	border-top: 2px solid rgba(0, 0, 0, .5);
-	border-left: 2px solid rgba(0, 0, 0, .5);
+	border-top: 2px solid var(--darkyellow);
+	border-left: 2px solid var(--darkyellow);
 }
 
 input[type=submit]{
