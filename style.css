@@ -364,6 +364,18 @@ a:active{
 	grid-column: 1 / span 6;
 }
 
+#image-yellow{
+	text-align: center;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+	height: 10rem;
+}
+
+#resizeimage{
+	height: 100%;
+	width: auto;
+}
+
 /*Form*/
 .questionwrapper{
 	padding-bottom: 1.6rem;
