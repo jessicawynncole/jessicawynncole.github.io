@@ -457,6 +457,7 @@ select{
 	border: none;
 	border-top: 2px solid var(--darkyellow);
 	border-left: 2px solid var(--darkyellow);
+	-webkit-appearance: none;
 }
 
 input[type=submit]{
