@@ -101,29 +101,33 @@
       <img src="images/Char_orange2.png" alt="An orange Tamagotchi character." id="image">
     </div>
 
+
+
+
+
     <!--Yellow Popup-->
     <div id="anchor4" class="gridrow"></div>
+
     <div id="popupwrapper" class="grid">
       <div class="popup" id="popup-yellow">
         <section class="popupheader" id="header-yellow">
           <h3 style="color:#FFFCBB;">Get your new BFF today!</h3>
         </section>
 
-        <form action="submission.html" method="POST"><!--Form-->
-
         <section id="popuptext-yellow">
-          <p>Can’t wait to enter the magical world of Tamagotchi? Order today! Can’t wait to enter the magical world of Tamagotchi? Order&nbsp;today</p>
+          <p>Can’t wait to enter the magical world of Tamagotchi?</p>
+          <form action="submission.html" method="POST"><!--Form-->
 
           <!--Question 1-->
           <section class="questionwrapper">
             <h4><u>C</u>ontact Information</h4>
             <div id="questioncontent">
               <div class="question" id="extralarge">
-                <h5>Name</h5>
-                <input type="text" name="Q1-1" id="Q1-1" class="extralarge" required>
+                <label for="Q1-1"><h5>NAME</h5></label>
+                  <input type="text" name="Q1-1" id="Q1-1" class="extralarge" required>
               </div>
               <div class="question" id="medium">
-                <h5>E-Mail Address</h5>
+                <label for="Q-2"><h5>E-mail Address</h5></label>
                 <input type="text" name="Q1-2" id="Q1-2" class="medium" required>
               </div>
             </div>
@@ -132,10 +136,10 @@
           <!--Question 2-->
           <section class="questionwrapper">
             <h4><u>P</u>roduct Choice</h4>
-            <h5>Select a colour</h5>
+            <label for="Q2-1"><h5>Select a colour</h5></label>
             <div id="questioncontent">
               <div class="question" id="extralarge">
-                <select name="Q2-1" id="Q2-1">
+                <select name="Q2-1" id="Q2-1" required>
                   <option value="a">Garden lavender</option>
                   <option value="a">Wonder turquoise</option>
                   <option value="a">Fairy pink</option>
@@ -145,7 +149,7 @@
                   <option value="a">Shimmer white</option>
                 </select>
               </div>
-            <div>
+            </div>
           </section>
 
           <!--Question 3-->
@@ -154,17 +158,17 @@
             <div id="questioncontent">
               <div class="question" id="large">
                 <label for="Q3-1"><h5>Credit Card #</h5><label>
-                  <input type="text" name="Q3-1" id="Q3-1" class="large" required>
-                </div>
-                <div class="question" id="medium">
-                  <label for="Q3-2"><h5>Exp. Date (MM/YY)</h5></label>
-                  <input type="text" name="Q3-2" id="Q3-2" class="medium" required>
-                </div>
-                <div class="question" id="small">
-                  <label for="Q3-3"><h5>CVV</h5><label>
-                    <input type="text" name="Q3-3" id="Q3-3" class="small" required>
-                </div>
+                <input type="text" name="Q3-1" id="Q3-1" class="large" required>
               </div>
+              <div class="question" id="medium">
+                <label for="Q3-2"><h5>Exp. Date (MM/YY)</h5></label>
+                <input type="text" name="Q3-2" id="Q3-2" class="medium" required>
+              </div>
+              <div class="question" id="small">
+                <label for="Q3-3"><h5>CVV</h5><label>
+                <input type="text" name="Q3-3" id="Q3-3" class="small" required>
+              </div>
+            </div>
           </section>
 
           <!--Question 4-->
@@ -172,25 +176,27 @@
             <h4><u>S</u>hipping Information</h4>
             <div id="questioncontent">
               <div class="question" id="extralarge">
-                <h5>Shipping Address</h5>
+                <label for="Q4-1"><h5>Shipping Address</h5></label>
                 <input type="text" name="Q4-1" id="Q4-1" class="extralarge" required>
               </div>
               <div class="question" id="medium">
-                <h5>Postal Code</h5>
+                <label for="Q4-2"><h5>Postal Code</h5></label>
                 <input type="text" name="Q4-2" id="Q4-2" class="medium" required>
               </div>
             </div>
+          </section>
+          <section class="qustionwrapper">
             <div id="questioncontent">
               <div class="question" id="medium">
-                <h5>City</h5>
+                <label for="Q4-3"><h5>City</h5></label>
                 <input type="text" name="Q4-3" id="Q4-3" class="medium" required>
               </div>
               <div iclass="question" id="medium">
-                <h5>State/Province</h5>
+                <label for="Q4-4"><h5>State/Province</h5></label>
                 <input type="text" name="Q4-4" id="Q4-4" class="medium" required>
               </div>
               <div class="question" id="medium">
-                <h5>Country</h5>
+                <label for="Q4-5"><h5>Country</h5></labl>
                 <input type="text" name="Q4-5" id="Q4-5" class="medium" required>
               </div>
             </div>
@@ -198,11 +204,11 @@
 
           <center><input type="submit" value="Order Now!" alt="Form submission button"></center>
 
-        </section><!--Popup-text section-->
+        </section><!--Popup text section-->
 
       </div><!--Popup div-->
-    <div id="anchor5"></div>
-    </div><!--Popup wrapper div-->
+      <div id="anchor5"></div>
+    </div><!--Popupwrapper-->
 
 
 
